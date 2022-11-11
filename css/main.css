@@ -1,10 +1,16 @@
-.container {
-    display: flex;
-    gap: 1em;
+body {
+    background-color: #e2e2e4;
 }
 
-.figure {
-    margin: 0;
+.container {
+    margin-top: 5em;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1em;
+    justify-content: center;
 }
 
 .card {
@@ -28,7 +34,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 320px
+    gap: 1em;
+    max-height: 320px;
 }
 
 .card:hover .card__image {
@@ -44,32 +51,19 @@
     justify-content: center;
 }
 
-.card__header img {
-    object-fit: cover;
-    max-width: 60%;
-    margin-left: auto;
-    margin-right: auto;
+.card__header .card__image {
+    width: 60%;
+    object-fit: contain;
     transition: all .3s;
-    margin-bottom: 1em;
-}
-
-.card__body .card__heading {
-    color: #08c;;
-    text-decoration: none;
-    text-align: center;
-    font-size: 1.4em;
-    margin: 0;
-    flex-grow: 1;
-}
-
-
-
-.card__header p:hover{
-    text-decoration: underline;
 }
 
 .card__tags{
     display: flex; 
+    justify-content: center;
+    width: 100%;
+    gap: 1.5em;
+    min-height: 2.5em;
+    align-items: flex-start;
 }
 
 .card__tag--news {
@@ -77,7 +71,20 @@
 }
 
 .card__tag--attribute{
-    background-color: #08c;
+    background-color: #041ca3;
+    color: white;
+    padding-right: 3em;
+    position: relative;
+}
+
+.attribute--stroke {
+    position: absolute;
+    font-size: 2.5em;
+    right: -45px;
+    -webkit-text-stroke: 1px #00069f;
+    background-image: linear-gradient(45deg, rgb(255, 217, 0), rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .card__tag {
@@ -136,12 +143,27 @@
 }
 
 
+/* BODY */
 .card__body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     flex-grow: 1;
+    margin-top: 1em;
+}
+
+.card__body .card__heading {
+    color: #08c;;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.4em;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.card__body .card__heading:hover {
+    text-decoration: underline;
 }
 
 .card__body .card__caption {

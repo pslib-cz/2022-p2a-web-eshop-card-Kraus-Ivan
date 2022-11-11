@@ -1,0 +1,184 @@
+.container {
+    display: flex;
+}
+
+.card {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin: 1em;
+    box-shadow: 0 1px 3px #00000026;
+    background-color: #fff;
+    box-shadow: 0 1px 3px #00000026;
+    border-bottom: 1px solid #00000026;
+    max-width: 18em;
+    padding: 1em;
+    cursor: pointer;
+    color: #000000b8;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__header {
+    text-align: center;
+    height: 320px
+}
+
+.card:hover .card__header--photo {
+    transform: scale(1.05);
+}
+
+.card:hover {
+    box-shadow: 0 1px 5px 2px #0000001a;
+}
+
+.card__header img {
+    object-fit: cover;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transition: all .3s;
+    margin-bottom: 1em;
+}
+
+.card__body .card__heading {
+    color: #08c;;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.4em;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.card__header p:hover{
+    text-decoration: underline;
+}
+
+.card__header .card__header--warning {
+    box-sizing: border-box;
+    background-color: #fc0;
+    font-size: 14px;
+    border-radius: 8px;
+    padding: 4px 8px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.card__stars {
+    color: #fc0;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.card__header .card__icon {
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.card__dots {
+    margin-bottom: 1em;
+}
+
+.dot {
+    height: 18px;
+    width: 18px;
+    border: 1px solid #0003;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot--black {
+    background-color: black;
+}
+
+.dot--grey {
+    background-color: #11111126;
+}
+
+.dot--pink {
+    background-color: rgb(248, 223, 227);
+}
+
+.dot--blue {
+    background-color: rgb(212, 244, 255);
+}
+
+.dot--white {
+    background-color: white;
+}
+
+
+.card__body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.card__body .card__caption {
+    color: #7ca600;
+    font-size: 14px;
+    margin: 1em;
+}
+
+.card__body .card__description {
+    font-size: 12px;
+    margin: 0;
+    min-height: 60px;
+}
+
+.footer__prices{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer__prices .footer__prices-price--month {
+    font-size: 12px;
+    display: inline-block;
+}
+
+.footer__prices .footer__prices-price--overall {
+    font-size: 12px;
+    display: inline-block;
+}
+
+.footer__prices-price--month strong, .footer__prices-price--overall strong {
+    display: block;
+    font-size: 20px;
+}
+
+.card__footer--text span {
+    display: block;
+}
+
+.card__footer--text {
+    font-size: 12px;
+}
+
+.card__cta {
+    border: 1px solid;
+    box-sizing: border-box;
+    padding: 9px 16px;
+    background-color: #9c0;
+    width: 100%;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px #00000026;
+    border-color: #8ebd00 #8ebd00 #7ea800;
+}
+
+.card__cta a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.card__cta:hover {
+    background-color: #a1d600;
+    border-color: #82ad00 #82ad00 #739900;
+}

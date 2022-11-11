@@ -213,6 +213,10 @@ body {
     border-radius: 3px;
     box-shadow: 0 1px 3px #00000026;
     border-color: #8ebd00 #8ebd00 #7ea800;
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-bottom: 1em;
 }
 
 .card__cta a {
